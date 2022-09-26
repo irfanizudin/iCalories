@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2DC26C28E1A8C400EFD39E /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2DC26B28E1A8C400EFD39E /* EditFoodView.swift */; };
 		2ED7D88028DD3E8E00B9D162 /* iCaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D87F28DD3E8E00B9D162 /* iCaloriesApp.swift */; };
 		2ED7D88228DD3E8E00B9D162 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D88128DD3E8E00B9D162 /* ContentView.swift */; };
 		2ED7D88428DD3E8F00B9D162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED7D88328DD3E8F00B9D162 /* Assets.xcassets */; };
 		2ED7D88728DD3E8F00B9D162 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED7D88628DD3E8F00B9D162 /* Preview Assets.xcassets */; };
+		2ED7D89028DD3FCE00B9D162 /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D88E28DD3FCE00B9D162 /* FoodModel.xcdatamodeld */; };
+		2ED7D89228DD419800B9D162 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D89128DD419800B9D162 /* DataController.swift */; };
+		2ED7D89628DD49AB00B9D162 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D89528DD49AB00B9D162 /* AddFoodView.swift */; };
+		2ED7D89828DD5AC700B9D162 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7D89728DD5AC700B9D162 /* TimeFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2DC26B28E1A8C400EFD39E /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 		2ED7D87C28DD3E8E00B9D162 /* iCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED7D87F28DD3E8E00B9D162 /* iCaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloriesApp.swift; sourceTree = "<group>"; };
 		2ED7D88128DD3E8E00B9D162 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2ED7D88328DD3E8F00B9D162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ED7D88628DD3E8F00B9D162 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2ED7D88F28DD3FCE00B9D162 /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
+		2ED7D89128DD419800B9D162 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2ED7D89528DD49AB00B9D162 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		2ED7D89728DD5AC700B9D162 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		2ED7D87E28DD3E8E00B9D162 /* iCalories */ = {
 			isa = PBXGroup;
 			children = (
+				2ED7D89428DD496E00B9D162 /* Helpers */,
+				2ED7D89328DD496600B9D162 /* Views */,
+				2ED7D88D28DD3F9C00B9D162 /* DataModel */,
 				2ED7D87F28DD3E8E00B9D162 /* iCaloriesApp.swift */,
-				2ED7D88128DD3E8E00B9D162 /* ContentView.swift */,
 				2ED7D88328DD3E8F00B9D162 /* Assets.xcassets */,
 				2ED7D88528DD3E8F00B9D162 /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				2ED7D88628DD3E8F00B9D162 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2ED7D88D28DD3F9C00B9D162 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2ED7D88E28DD3FCE00B9D162 /* FoodModel.xcdatamodeld */,
+				2ED7D89128DD419800B9D162 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		2ED7D89328DD496600B9D162 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2ED7D88128DD3E8E00B9D162 /* ContentView.swift */,
+				2ED7D89528DD49AB00B9D162 /* AddFoodView.swift */,
+				2E2DC26B28E1A8C400EFD39E /* EditFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ED7D89428DD496E00B9D162 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2ED7D89728DD5AC700B9D162 /* TimeFormatting.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED7D89628DD49AB00B9D162 /* AddFoodView.swift in Sources */,
 				2ED7D88228DD3E8E00B9D162 /* ContentView.swift in Sources */,
+				2ED7D89228DD419800B9D162 /* DataController.swift in Sources */,
 				2ED7D88028DD3E8E00B9D162 /* iCaloriesApp.swift in Sources */,
+				2ED7D89028DD3FCE00B9D162 /* FoodModel.xcdatamodeld in Sources */,
+				2E2DC26C28E1A8C400EFD39E /* EditFoodView.swift in Sources */,
+				2ED7D89828DD5AC700B9D162 /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2ED7D88E28DD3FCE00B9D162 /* FoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2ED7D88F28DD3FCE00B9D162 /* FoodModel.xcdatamodel */,
+			);
+			currentVersion = 2ED7D88F28DD3FCE00B9D162 /* FoodModel.xcdatamodel */;
+			path = FoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2ED7D87428DD3E8E00B9D162 /* Project object */;
 }
